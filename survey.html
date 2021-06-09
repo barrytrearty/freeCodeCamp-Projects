@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FCC Survey Page</title>
+    <link rel="stylesheet" href="fccstyle/survey.css">
+  </head>
+  <body>
+    <div class="picture"> 
+      <div class="layer">
+        <section id="heading">
+          <h1 id="title">Dunmore Ltd. Sign Up Sheet</h1>
+          <p id="description">Please fill in your details to complete registration</p>
+        </section>
+        <section id="questions">
+          <form id="survey-form" action="process">
+            <div class="sur">
+              <label id="name-label">Name</label>
+              <input id="name" type="text" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="sur">
+              <label id="email-label">Email</label>
+              <input id="email" type="email" name="email" placeholder="Enter you email" required>
+            </div>
+            <div class="sur">
+              <label id="number-label">Age</label>
+              <input id="number" type="number" name="age" min="1" max="99" placeholder="Age">
+            </div>
+            <div class="sur"> <!--Dropdown -->
+              <label id="services-label">What service do you require?</label>
+              <select name="select label" id="dropdown">
+                <option value="blind-fitting">Blind Fitting</option>
+                <option value="lawn-cutting">Lawn Cutting</option>
+                <option value="furniture-assembly">Furniture Assembly</option>
+                <option value="hashing">Hashing</option>
+              </select>
+            </div>
+            <div class="sur"> <!--Radio -->
+              <p id="area-label">What is your area?</p>
+              <label class="area-radio"><input name="local-area" value="carrigart" type="radio" checked>Carrigart</label>
+              <label class="area-radio"><input name="local-area" value="downings"  type="radio">Downings</label>
+              <label class="area-radio"><input name="local-area" value="glen"  type="radio" >Glen</label>
+            </div>
+            <div class="sur"> <!--checkbox-->
+              <label id="payment-label">Payment Method</label>
+              <label class="payment-checkbox"><input id="cash" type="checkbox" value="cash" name="payment-method" checked>Cash in Hand</label>
+              <label class="payment-checkbox"><input id="card" type="checkbox" value="card" name="payment-method">Card</label>
+              <label class="payment-checkbox"><input id="cheque" type="checkbox" value="cheque" name="payment-method">Cheque</label>
+            </div>
+            <div class="sur"> <!--textarea-->
+              <label id="comments-label">Any comments or suggestions?</label>
+              <textarea name="comments" cols="40" rows="4"></textarea>
+            </div>
+            <div>
+              <input id="submit" type="submit" name="submit" value="Submit">
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
